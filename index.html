@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-0UZMSBQZ7mkm+MwlM84VvffIGpPzlCN7fYmP6jQQRM3uU1IvZLQq0VP4PWbQI+75wvlDjumgoPEoxJ4knuIxSLQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login e Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <form id="loginForm" class="form">
+            <h2>Login</h2>
+            <label for="loginUsername"><i class="fas fa-user"></i> Username:</label>
+            <input type="text" id="loginUsername" name="loginUsername" required>
+
+            <label for="loginPassword"><i class="fas fa-lock"></i> Password:</label>
+            <input type="password" id="loginPassword" name="loginPassword" required>
+
+            <button type="button" onclick="login()"><i class="fas fa-sign-in-alt"></i> Login</button>
+            <p>Não tem uma conta? <a href="javascript:void(0);" onclick="toggleForm()">Cadastre-se</a></p>
+        </form>
+
+        <form id="registerForm" class="form hidden">
+            <h2>Cadastro</h2>
+            <label for="registerUsername"><i class="fas fa-user-plus"></i> Novo Username:</label>
+            <input type="text" id="registerUsername" name="registerUsername" required>
+
+            <label for="registerPassword"><i class="fas fa-lock"></i> Nova Password:</label>
+            <input type="password" id="registerPassword" name="registerPassword" required>
+
+            <button type="button" onclick="register()"><i class="fas fa-user-plus"></i> Cadastrar</button>
+            <p>Já tem uma conta? <a href="javascript:void(0);" onclick="toggleForm()">Faça Login</a></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
